@@ -1,0 +1,2 @@
+rootProject.name='FindMyCart'
+include ':app'

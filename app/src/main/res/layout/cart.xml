@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/newList_TitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/WalmartBlue">
+
+
+
+        <TextView
+            android:id="@+id/newListTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/WalmartBlue"
+            android:gravity="center_horizontal"
+            android:text="@string/cart"
+            android:textAlignment="center"
+            android:textColor="@color/WalmartGold"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/cart_StartButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:background="@color/WalmartBlue"
+        app:srcCompat="@android:drawable/ic_menu_directions" />
+
+    <ImageButton
+        android:id="@+id/emptyCartButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/WalmartBlue"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/WalmartBlue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/mainMenu"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@color/WalmartBlue"
+                android:contentDescription="@string/mainMenuButtonDes"
+                android:src="@drawable/baseline_home_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/products"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/WalmartBlue"
+                android:contentDescription="@string/productsButtonDes"
+                android:src="@drawable/baseline_inventory_2_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/newList"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/WalmartBlue"
+                android:contentDescription="@string/newListButtonDes"
+                android:src="@drawable/baseline_shopping_cart_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/savedLists"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@color/WalmartBlue"
+                android:contentDescription="@string/savedListButtonDes"
+                android:src="@drawable/baseline_directions_black_24dp" />
+
+        </LinearLayout>
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="594dp"
+        android:layout_below="@+id/newList_TitleBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/cartListView"
+                android:layout_width="match_parent"
+                android:layout_height="594dp"
+                android:layout_below="@+id/newList_TitleBar"
+                android:layout_marginTop="0dp"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

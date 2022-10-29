@@ -1,0 +1,52 @@
+<resources>
+
+    //strings for titles within application
+    <string name="app_name">FindMyCart</string>
+    <string name="MainTitle">FindMyCart</string>
+    <string name="newListTitle">New List</string>
+    <string name="productsTitle">Products</string>
+    <string name="savedItemsTitle">Saved Items</string>
+
+    //string for store map
+    <string name="storeMap">Store Map</string>
+
+    //strings for store section names
+    <string name="grocerySec">Groceries</string>
+    <string name="electronicsSec">Electronics</string>
+    <string name="sportingGoodsSec">Sporting Goods</string>
+    <string name="chemicalsSec">Chemicals</string>
+    <string name="hardwareSec">Hardware</string>
+    <string name="petSec">Pets</string>
+
+    //string for products layout
+    <string name="addToCart">Add To Cart</string>
+
+    //strings for general text throughout app
+    <string name="nameText">Name</string>
+    <string name="itemName">Test example item name</string>
+    <string name="removeItem">Remove Item</string>
+    <string name="price">$0.00</string>
+
+    //new list layout
+    <string name="listNameText">List Name:</string>
+    <string name="newList_nameHint">Please enter a name for your list.</string>
+    <string name="viewProducts">View Products</string>
+
+    //saved lists layout
+    <string name="savedListsTitle">Saved Lists</string>
+    <string name="noListMessage">Sorry, you have no lists currently saved.</string>
+
+    //content description strings
+    <string name="sideNavBarDes">Side Navigation Bar Button</string>
+    <string name="searchButtonDes">Search Button</string>
+    <string name="mainMenuButtonDes">Main Menu Button</string>
+    <string name="productsButtonDes">Browse Products Button</string>
+    <string name="newListButtonDes">New List Button</string>
+    <string name="savedListButtonDes">Saved List Button</string>
+    <string name="startRouteButtonDes">Start Route Button</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cart">Cart</string>
+    <string name="products">Products</string>
+
+</resources>

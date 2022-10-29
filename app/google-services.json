@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "225031971070",
+    "project_id": "find-my-cart",
+    "storage_bucket": "find-my-cart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225031971070:android:a3f9b135641751d65c45af",
+        "android_client_info": {
+          "package_name": "com.example.findmycart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225031971070-1fvg32pe4stpd8jgqmjo3hh9gkl6d7kl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmpSnQtAbx7FX0ng-EIklzOQQhcmM9Rp4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225031971070-1fvg32pe4stpd8jgqmjo3hh9gkl6d7kl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

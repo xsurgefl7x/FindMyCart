@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WalmartBlue"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/WalmartBlue"
+        android:singleLine="true"
+        android:text="@string/MainTitle"
+        android:textAlignment="center"
+        android:textColor="@color/WalmartGold"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mainTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/WalmartBlue"
+        android:orientation="vertical"
+        android:layout_above="@id/bottomNavigationView"
+        android:backgroundTint="@color/White">
+
+
+        <TextView
+            android:id="@+id/welcomeMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:lines="1"
+            android:text="Welcome"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/welcomeMessage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:lines="1"
+            android:text="to"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/welcomeMessage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:lines="1"
+            android:text="FindMyCart!"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="50sp" />
+
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcomeMessage"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="StartShopping"
+            android:background="@color/WalmartBlue"
+            android:text="Start Shopping"
+            android:textColor="@color/WalmartGold"
+            android:paddingHorizontal="20dp"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/WalmartBlue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/mainMenu"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@color/WalmartBlue"
+                android:contentDescription="@string/mainMenuButtonDes"
+                android:src="@drawable/baseline_home_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/products"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/WalmartBlue"
+                android:contentDescription="@string/productsButtonDes"
+                android:src="@drawable/baseline_inventory_2_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/newList"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/WalmartBlue"
+                android:contentDescription="@string/newListButtonDes"
+                android:src="@drawable/baseline_shopping_cart_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/savedLists"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@color/WalmartBlue"
+                android:contentDescription="@string/savedListButtonDes"
+                android:src="@drawable/baseline_directions_black_24dp" />
+
+        </LinearLayout>
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </FrameLayout>
+
+</RelativeLayout>

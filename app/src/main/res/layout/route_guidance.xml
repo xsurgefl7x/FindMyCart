@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WalmartBlue">
+
+
+    <TextView
+        android:id="@+id/routeGuide_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Route Guidance"
+        android:hint="Title"
+        android:textSize="30dp"
+        android:paddingHorizontal="20dp"
+        android:textColor="@color/WalmartGold"
+        android:background="@color/WalmartBlue"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/routeGuide_Title"
+        android:orientation="vertical"
+        android:layout_above="@id/bottomNavigationView"
+        android:background="@color/White">
+
+        <TextView
+            android:id="@+id/currentItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/routeGuide_Title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Your current item is: "
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/currentItemName"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/WalmartGold"
+            android:hint="Item Name"
+            android:textSize="30dp"
+            android:maxLines="3"
+            android:layout_below="@+id/currentItem"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/currentLocation"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Aisle"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/currentItemLocation"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textColor="@color/WalmartGold"
+                android:layout_marginLeft="10dp"
+                android:hint="Aisle"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtview5"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Area in the Aisle:"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/WalmartGold"
+                android:hint="Area"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/nextItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your next item is: "
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/currentItem"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"/>
+
+
+
+        <TextView
+            android:id="@+id/nextItemName"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nextItem"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/WalmartBlue"
+            android:hint="Item Name"
+            android:textSize="20dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/itemLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aisle:"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/nextItemLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/WalmartBlue"
+                android:hint="Aisle"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/nextItemButton"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textColor="@color/WalmartGold"
+            android:background="@color/WalmartBlue"
+            android:text="Next Item"
+            android:layout_marginBottom="30dp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/WalmartBlue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/mainMenu"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@color/WalmartBlue"
+                android:contentDescription="@string/mainMenuButtonDes"
+                android:src="@drawable/baseline_home_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/products"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/WalmartBlue"
+                android:contentDescription="@string/productsButtonDes"
+                android:src="@drawable/baseline_inventory_2_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/newList"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/WalmartBlue"
+                android:contentDescription="@string/newListButtonDes"
+                android:src="@drawable/baseline_shopping_cart_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/savedLists"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@color/WalmartBlue"
+                android:contentDescription="@string/savedListButtonDes"
+                android:src="@drawable/baseline_directions_black_24dp" />
+
+        </LinearLayout>
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>
